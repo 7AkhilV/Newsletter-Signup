@@ -37,12 +37,12 @@ app.post("/",function(req,res){
 
     const options ={
         method:"POST",
-        auth:"Akhil:9a9cfb9e11dd5d5f7bce751834af6bac-us10"
+        auth:"Akhil:1f2b32383946f2808a339b18dbdbd217-us10"
     }
 
 
     const request = https.request(url,options,function(response){
-        if (response.statusCode==200){
+        if (response.statusCode===200){
             res.sendFile(__dirname + "/succes.html")
         }else{
             res.sendFile(__dirname +  "/failure.html")
@@ -69,7 +69,7 @@ app.listen(process.env.PORT || 3000,function(){
 })
 
 //API KEY 
-//9a9cfb9e11dd5d5f7bce751834af6bac-us10
+//1f2b32383946f2808a339b18dbdbd217-us10
 
 //LIST ID
 //dd55943025
